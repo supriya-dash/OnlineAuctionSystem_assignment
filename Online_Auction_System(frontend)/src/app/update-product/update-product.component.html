@@ -1,0 +1,102 @@
+<div class="col-md-6 offset-md-3">
+
+    <h3>Add Product</h3>
+
+<form (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+
+        <label>Product Id</label>
+
+        <input type="text" class="form-control" id="productID"
+
+            [(ngModel)]="seller.productID" name="productID">
+
+    </div>
+
+    <div class="form-group">
+
+        <label>Product Name</label>
+
+        <input type="text" class="form-control" id="productName"
+
+            [(ngModel)]="seller.productName" name="productName">
+
+    </div>
+
+    <div class="form-group">
+
+        <label>Product Description</label>
+
+        <input type="text" class="form-control" id="productDescription"
+
+            [(ngModel)]="seller.productDescription" name="productDescription">
+
+    </div>
+    <div class="form-group">
+
+        <label>Pproduct Price</label>
+
+        <input type="number" class="form-control" id="productPrice"
+
+            [(ngModel)]="seller.productPrice" name="productPrice">
+
+    </div>
+
+    <div class="form-group">
+
+        <label>Pproduct Start Bidding Amount</label>
+
+        <input type="number" class="form-control" id="productStartamt"
+
+            [(ngModel)]="seller.productStartamt" name="productStartamt">
+
+    </div>
+
+    <div class="form-group">
+
+        <label>Pproduct Bidding Date</label>
+
+        <input type="date" class="form-control" id="productBiddingdate"
+
+            [(ngModel)]="seller.productBiddingdate" name="productBiddingdate">
+
+    </div>
+
+    <div class="form-group">
+
+
+
+        <label>Product Category</label>
+
+
+
+        <select class="form-control" id="category" [(ngModel)]="seller.productCategory" name="category" required>
+
+
+
+            <option value="Mobiles">Mobiles</option>
+
+
+
+            <option value="Electronics">Electronics</option>
+
+            <option value="Clothing">Clothing</option>
+
+
+
+            <option value="Home">Home</option>
+
+
+
+        </select>
+
+
+
+    </div>
+
+    <button class="btn btn-danger" type="submit">Add</button>
+
+</form>
+
+</div>
